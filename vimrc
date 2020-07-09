@@ -37,6 +37,14 @@ map sj :set splitbelow<CR>:split<CR>
 map sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
 map sl :set splitright<CR>:vsplit<CR>
 
+map <up> :res +5<CR>
+map <down> :res -5<CR>
+map <left> :vertical resize-5<CR>
+map <right> :vertical resize+5<CR>
+
+noremap s[ <C-w>t<C-w>K
+noremap s] <C-w>t<C-w>H
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
