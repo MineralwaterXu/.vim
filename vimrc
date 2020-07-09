@@ -22,8 +22,10 @@ map S :w<CR>
 map s <nop>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
-map { :split<CR>
-map } :vsplit<CR>
+map sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+map sj :set splitbelow<CR>:split<CR>
+map sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+map sl :set splitright<CR>:vsplit<CR>
 
 call plug#begin('~/.vim/plugged')
 
