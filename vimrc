@@ -52,4 +52,4 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-colorscheme elflord
+colorscheme keohler
